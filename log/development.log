@@ -1202,3 +1202,3098 @@ Processing by ArticlesController#index as HTML
   [1m[35mArticle Load (0.8ms)[0m  SELECT "articles".* FROM "articles"
   Rendered articles/index.html.erb within layouts/application (3.0ms)
 Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-30 14:39:25 +0700
+
+PG::ConnectionBad (FATAL:  role "rails" does not exist
+):
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  C:/Ruby22-x64/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  C:/Ruby22-x64/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__55471354__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (576.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-30 14:41:04 +0700
+
+PG::ConnectionBad (FATAL:  database "blog_developmentnew" does not exist
+):
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  C:/Ruby22-x64/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  C:/Ruby22-x64/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__55471354__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (645.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-30 14:43:35 +0700
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__55471354__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (566.0ms)
+  [1m[36m (213.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (4.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateArticles (20160928135549)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (40.0ms)[0m  [1mCREATE TABLE "articles" ("id" serial primary key, "title" character varying(255), "body" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160928135549"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-30 14:44:09 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 62ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 14:44:28 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 793ms (Views: 789.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 14:44:37 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 14:44:37 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 14:44:37 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 14:44:37 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 14:44:37 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 14:44:37 +0700
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2016-09-30 14:47:22 +0700
+Processing by Rails::InfoController#properties as */*
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/templates/rails/info/properties.html.erb (1.0ms)
+Completed 200 OK in 465ms (Views: 457.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:11:36 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (2.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 357ms
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/assets/stylesheets/application.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1994490281_43108400'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (402.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:12:38 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 167ms
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/assets/stylesheets/application.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__837101036_43442180'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (392.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:15:38 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 961ms (Views: 947.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:46 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:47 +0700
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-09-30 15:15:49 +0700
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (103.0ms)
+  Rendered articles/new.html.erb within layouts/application (161.0ms)
+Completed 200 OK in 220ms (Views: 200.8ms | ActiveRecord: 18.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-09-30 15:15:52 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZhHwFBaT5g3NmDzT3HCKojaCC4UTJOY+Mb6mvO2ntAM=", "article"=>{"title"=>"sdad", "body"=>"asdad"}, "commit"=>"Create Article"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (437.0ms)[0m  INSERT INTO "articles" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["body", "asdad"], ["created_at", Fri, 30 Sep 2016 08:15:52 UTC +00:00], ["title", "sdad"], ["updated_at", Fri, 30 Sep 2016 08:15:52 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/articles/1
+Completed 302 Found in 443ms (ActiveRecord: 438.0ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2016-09-30 15:15:53 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (22.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 40.2ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 15:15:53 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:53 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:53 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:53 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 15:15:53 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:15:57 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-09-30 15:17:39 +0700
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (3.0ms)
+  Rendered articles/new.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (Invalid CSS after "... THE ABYSS- 体験版": expected "{", was ""
+  (in C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/assets/stylesheets/application.scss:3)):
+    2: <html>
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.scss:3
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__468509019_43089440'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (405.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 15:18:03 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 15:18:03 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 15:18:03 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 15:18:03 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 15:18:03 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 15:18:03 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:18:16 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 160ms
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/assets/stylesheets/application.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__468509019_43089440'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (549.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:19:01 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (12.0ms)
+ERROR: compiling _app_views_layouts_application_html_erb__5823008_34186160 RAISED C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/layouts/application.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+...stylesheet_link_tag    , media: "all", "data-turbolinks-trac...
+...                               ^
+C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/layouts/application.html.erb:5: syntax error, unexpected ',', expecting ')'
+...eet_link_tag    , media: "all", "data-turbolinks-track" => t...
+...                               ^
+C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/layouts/application.html.erb:5: syntax error, unexpected =>, expecting ')'
+...ll", "data-turbolinks-track" => true );@output_buffer.safe_a...
+...                               ^
+C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/layouts/application.html.erb:6: syntax error, unexpected =>, expecting :: or '[' or '.'
+...ag , "data-turbolinks-track" => true );@output_buffer.safe_a...
+...                               ^
+Function body:           def _app_views_layouts_application_html_erb__5823008_34186160(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  ';@output_buffer.append=( stylesheet_link_tag    , media: "all", "data-turbolinks-track" => true );@output_buffer.safe_append='
+';@output_buffer.safe_append='  ';@output_buffer.append=( javascript_include_tag , "data-turbolinks-track" => true );@output_buffer.safe_append='
+';@output_buffer.safe_append='  ';@output_buffer.append=( csrf_meta_tags );@output_buffer.safe_append='
+';@output_buffer.safe_append='</head>
+<body>
+
+';@output_buffer.append=( yield );@output_buffer.safe_append='
+';@output_buffer.safe_append='
+</body>
+</html>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Ruby22-x64/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__1131113010__process_action__callbacks'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__487035955__call__callbacks'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+Completed 500 Internal Server Error in 84ms
+
+ActionView::Template::Error (C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/layouts/application.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+...stylesheet_link_tag    , media: "all", "data-turbolinks-trac...
+...                               ^
+C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/layouts/application.html.erb:5: syntax error, unexpected ',', expecting ')'
+...eet_link_tag    , media: "all", "data-turbolinks-track" => t...
+...                               ^
+C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/layouts/application.html.erb:5: syntax error, unexpected =>, expecting ')'
+...ll", "data-turbolinks-track" => true );@output_buffer.safe_a...
+...                               ^
+C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/layouts/application.html.erb:6: syntax error, unexpected =>, expecting :: or '[' or '.'
+...ag , "data-turbolinks-track" => true );@output_buffer.safe_a...
+...                               ^):
+    2: <html>
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    , media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag , "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Ruby22-x64/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1131113010__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__487035955__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (515.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:27:08 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 660ms
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/assets/stylesheets/application.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__5823008_44155680'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (437.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-30 15:29:16 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (7.0ms)
+Completed 200 OK in 251ms (Views: 197.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-30 15:29:35 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:29:54 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (2.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 181ms
+
+ActionView::Template::Error (undefined method `environment' for nil:NilClass
+  (in C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/assets/stylesheets/application.scss)):
+    2: <html>
+    3: <head>
+    4:   <title>Blog</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1410493201_43116180'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (365.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:32:18 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (2.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (13.0ms)
+Warning. Error encountered while saving cache c8722de76e6898b97e4552f3ceec95c9d0a6d37d/_bootstrap.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_custom.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_variables.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_mixins.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_breakpoints.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_hover.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_image.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_tag.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_reset-filter.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_resize.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_screen-reader.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_size.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_tab-focus.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_reset-text.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_text-emphasis.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_text-hide.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_text-truncate.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_alert.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_buttons.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_cards.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_pagination.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_lists.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_list-group.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_nav-divider.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_forms.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_progress.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_table-row.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_background-variant.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_border-radius.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_gradients.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_clearfix.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_grid-framework.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_grid.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 8f445008f07914e63bb0236d9e8b31266d8d3614/_pulls.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_normalize.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_print.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_reboot.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_type.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_images.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_code.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_grid.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_tables.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_forms.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_buttons.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_animation.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_dropdown.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_button-group.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_input-group.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_custom-forms.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_nav.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_navbar.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_card.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_breadcrumb.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_pagination.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_tags.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_jumbotron.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_alert.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_progress.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_media.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_list-group.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_responsive-embed.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_close.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_modal.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_tooltip.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_popover.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_carousel.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache e2a03db48a80b94bea74a83c6dc3690b9d7f60ad/_utilities.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 543716e3e23d9884281099a516424e82fc87780a/_background.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 543716e3e23d9884281099a516424e82fc87780a/_clearfix.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 543716e3e23d9884281099a516424e82fc87780a/_display.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 543716e3e23d9884281099a516424e82fc87780a/_flex.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 543716e3e23d9884281099a516424e82fc87780a/_pulls.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 543716e3e23d9884281099a516424e82fc87780a/_screenreaders.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 543716e3e23d9884281099a516424e82fc87780a/_spacing.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 543716e3e23d9884281099a516424e82fc87780a/_text.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Warning. Error encountered while saving cache 543716e3e23d9884281099a516424e82fc87780a/_visibility.scssc: can't dump anonymous class #<Class:0x0000000554f498>
+
+Completed 200 OK in 10073ms (Views: 10046.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 15:32:37 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:37 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:37 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 15:32:38 +0700
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-09-30 15:32:43 +0700
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (70.0ms)
+  Rendered articles/new.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 189ms (Views: 189.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-09-30 15:32:46 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZhHwFBaT5g3NmDzT3HCKojaCC4UTJOY+Mb6mvO2ntAM=", "article"=>{"title"=>"asd", "body"=>"asdasdad"}, "commit"=>"Create Article"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (351.0ms)[0m  INSERT INTO "articles" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["body", "asdasdad"], ["created_at", Fri, 30 Sep 2016 08:32:47 UTC +00:00], ["title", "asd"], ["updated_at", Fri, 30 Sep 2016 08:32:47 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/articles/2
+Completed 302 Found in 357ms (ActiveRecord: 352.0ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2016-09-30 15:32:47 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (12.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 48.6ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 15:32:49 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/articles/1" for 127.0.0.1 at 2016-09-30 16:34:28 +0700
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZhHwFBaT5g3NmDzT3HCKojaCC4UTJOY+Mb6mvO2ntAM=", "id"=>"1"}
+  [1m[35mArticle Load (189.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (210.0ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = $1  [["id", 1]]
+  [1m[36m (25.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/articles
+Completed 302 Found in 1645ms (ActiveRecord: 424.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 16:34:33 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (269.0ms)
+Completed 200 OK in 1567ms (Views: 1524.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 16:34:35 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:36 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:36 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:36 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:36 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:37 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:37 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:37 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:37 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:37 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:37 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:37 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:37 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:37 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:38 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:38 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:38 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 16:34:38 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 16:37:47 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 1324ms (Views: 1276.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 16:37:58 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 16:38:44 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 16:38:45 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 16:48:31 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:32 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 16:48:49 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 216ms (Views: 201.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 16:48:57 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 16:50:30 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 201ms (Views: 185.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 16:50:38 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-30 19:41:44 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (14.0ms)
+Completed 200 OK in 272ms (Views: 207.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:42:08 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (101.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (155.0ms)
+Completed 200 OK in 3880ms (Views: 3707.9ms | ActiveRecord: 148.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 19:42:12 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:12 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:12 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:12 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:12 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:12 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:12 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:13 +0700
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-09-30 19:42:23 +0700
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (335.0ms)
+  Rendered articles/new.html.erb within layouts/application (421.0ms)
+Completed 200 OK in 475ms (Views: 474.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-09-30 19:42:27 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZhHwFBaT5g3NmDzT3HCKojaCC4UTJOY+Mb6mvO2ntAM=", "article"=>{"title"=>"sad", "body"=>"asdasd"}, "commit"=>"Create Article"}
+  [1m[36m (31.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (431.0ms)[0m  INSERT INTO "articles" ("body", "created_at", "title", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["body", "asdasd"], ["created_at", Fri, 30 Sep 2016 12:42:27 UTC +00:00], ["title", "sad"], ["updated_at", Fri, 30 Sep 2016 12:42:27 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/articles/3
+Completed 302 Found in 469ms (ActiveRecord: 464.0ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2016-09-30 19:42:27 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered articles/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 65.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 19:42:27 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 19:42:28 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:42:30 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:05 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:06 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:44:33 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:33 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 19:44:33 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:33 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:33 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 19:44:34 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 19:45:40 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:45:43 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:45:44 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:45:44 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 73ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:45:44 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 57ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:45:45 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:45:45 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 19:45:45 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:13:09 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 105ms (Views: 103.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:10 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:13:42 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 52ms (Views: 50.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 20:13:42 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:42 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:42 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 20:13:43 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:14:13 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 20:14:14 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:14:16 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:14:17 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:14:18 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:14:18 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:14:18 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:18:31 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-09-30 20:21:01 +0700
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (33396.9ms)
+  Rendered articles/new.html.erb within layouts/application (39347.3ms)
+Completed 200 OK in 45202ms (Views: 42210.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:24:21 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 314ms (Views: 312.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:49:31 +0700
+Processing by ArticlesController#index as HTML
+ERROR: compiling _app_views_articles_index_html_erb___1075351315_42416660 RAISED C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/articles/index.html.erb:12: syntax error, unexpected ':'
+..._artical_path(artical), class : 'btn btn-success' );@output_...
+...                               ^
+Function body:           def _app_views_articles_index_html_erb___1075351315_42416660(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "articles/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<div class = "container" >
+  <h1>BLOGLIFE</h1>
+  <div class = "row">
+    <div class = "col-sm-8">
+      <table>
+';         @articles.each do |article| 
+@output_buffer.safe_append='            <div class = \'card\' href = "/articles">
+              <div class = \'card-block\'>
+                <h4 class = \'card-title\'> ';@output_buffer.append=(article.title);@output_buffer.safe_append=' </h4>
+                <p class = \'card-text\'> ';@output_buffer.append=(article.body);@output_buffer.safe_append=' </p>
+                <div class = \'card-footer\'>
+                  ';@output_buffer.append=( link_to 'Edit', edit_artical_path(artical), class : 'btn btn-success' );@output_buffer.safe_append='
+';@output_buffer.safe_append='                </div>
+              </div>
+            </div>
+';         end 
+@output_buffer.safe_append='      </table>
+    </div>
+  </div>
+
+
+  <br>
+  ';@output_buffer.append=( link_to 'New Article', new_article_path );@output_buffer.safe_append='
+';@output_buffer.safe_append='
+</div>
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/Ruby22-x64/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:403:in `_run__579976194__process_action__callbacks'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__33437752__call__callbacks'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+  Rendered articles/index.html.erb within layouts/application (17843.0ms)
+Completed 500 Internal Server Error in 18662ms
+
+ActionView::Template::Error (C:/Users/Thanh Khoan/Desktop/BTTH1-RubyOnRails/app/views/articles/index.html.erb:12: syntax error, unexpected ':'
+..._artical_path(artical), class : 'btn btn-success' );@output_...
+...                               ^):
+     9:                 <h4 class = 'card-title'> <%=article.title%> </h4>
+    10:                 <p class = 'card-text'> <%=article.body%> </p>
+    11:                 <div class = 'card-footer'>
+    12:                   <%= link_to 'Edit', edit_artical_path(artical), class : 'btn btn-success' %>
+    13:                 </div>
+    14:               </div>
+    15:             </div>
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/Ruby22-x64/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__579976194__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__33437752__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby22-x64/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (831.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1310.1ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3628.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:57:29 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (22.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3533.2ms)
+Completed 500 Internal Server Error in 3576ms
+
+ActionView::Template::Error (undefined local variable or method `artical' for #<#<Class:0x000000042dde68>:0x00000004299358>):
+     9:                 <h4 class = 'card-title'> <%=article.title%> </h4>
+    10:                 <p class = 'card-text'> <%=article.body%> </p>
+    11:                 <div class = 'card-footer'>
+    12:                   <%= link_to 'Edit', edit_artical_path(artical), class: 'btn btn-success' %>
+    13:                 </div>
+    14:               </div>
+    15:             </div>
+  app/views/articles/index.html.erb:12:in `block in _app_views_articles_index_html_erb___1075351315_34903040'
+  app/views/articles/index.html.erb:6:in `_app_views_articles_index_html_erb___1075351315_34903040'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (38.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (909.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 20:59:27 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (464.0ms)
+Completed 500 Internal Server Error in 498ms
+
+ActionView::Template::Error (undefined method `edit_artical_path' for #<#<Class:0x000000042dde68>:0x0000000553ab10>):
+     9:                 <h4 class = 'card-title'> <%=article.title%> </h4>
+    10:                 <p class = 'card-text'> <%=article.body%> </p>
+    11:                 <div class = 'card-footer'>
+    12:                   <%= link_to 'Edit', edit_artical_path(article), class: 'btn btn-success' %>
+    13:                 </div>
+    14:               </div>
+    15:             </div>
+  app/views/articles/index.html.erb:12:in `block in _app_views_articles_index_html_erb___1075351315_44653940'
+  app/views/articles/index.html.erb:6:in `_app_views_articles_index_html_erb___1075351315_44653940'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (503.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:00:01 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (278.0ms)
+Completed 500 Internal Server Error in 311ms
+
+ActionView::Template::Error (undefined method `edit_articles_path' for #<#<Class:0x000000042dde68>:0x00000004ff6078>):
+     9:                 <h4 class = 'card-title'> <%=article.title%> </h4>
+    10:                 <p class = 'card-text'> <%=article.body%> </p>
+    11:                 <div class = 'card-footer'>
+    12:                   <%= link_to 'Edit', edit_articles_path(article), class: 'btn btn-success' %>
+    13:                 </div>
+    14:               </div>
+    15:             </div>
+  app/views/articles/index.html.erb:12:in `block in _app_views_articles_index_html_erb___1075351315_41919240'
+  app/views/articles/index.html.erb:6:in `_app_views_articles_index_html_erb___1075351315_41919240'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (41.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (437.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:00:28 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (112.0ms)
+Completed 500 Internal Server Error in 143ms
+
+ActionView::Template::Error (undefined method `edit_articles_path' for #<#<Class:0x000000042dde68>:0x000000040cb670>):
+     9:                 <h4 class = 'card-title'> <%=article.title%> </h4>
+    10:                 <p class = 'card-text'> <%=article.body%> </p>
+    11:                 <div class = 'card-footer'>
+    12:                   <%= link_to 'Edit', edit_articles_path(article), class: 'btn btn-success' %>
+    13:                 </div>
+    14:               </div>
+    15:             </div>
+  app/views/articles/index.html.erb:12:in `block in _app_views_articles_index_html_erb___1075351315_41919240'
+  app/views/articles/index.html.erb:6:in `_app_views_articles_index_html_erb___1075351315_41919240'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (28.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (448.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:01:50 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (56.0ms)
+Completed 500 Internal Server Error in 112ms
+
+ActionView::Template::Error (undefined method `edit_articles_path' for #<#<Class:0x000000042dde68>:0x000000054a8120>):
+     9:                 <h4 class = 'card-title'> <%=article.title%> </h4>
+    10:                 <p class = 'card-text'> <%=article.body%> </p>
+    11:                 <div class = 'card-footer'>
+    12:                   <%= Link_to'Edit', edit_articles_path(article), class: 'btn' %>
+    13:                 </div>
+    14:               </div>
+    15:             </div>
+  app/views/articles/index.html.erb:12:in `block in _app_views_articles_index_html_erb___1075351315_44372240'
+  app/views/articles/index.html.erb:6:in `_app_views_articles_index_html_erb___1075351315_44372240'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (406.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:03:04 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (49.0ms)
+Completed 500 Internal Server Error in 83ms
+
+ActionView::Template::Error (undefined method `edit_articles_path' for #<#<Class:0x000000042dde68>:0x00000004f3b9d0>):
+     9:                 <h4 class = 'card-title'> <%=article.title%> </h4>
+    10:                 <p class = 'card-text'> <%=article.body%> </p>
+    11:                 <div class = 'card-footer'>
+    12:                   <%= link_to 'Edit', edit_articles_path(article), class: 'btn' %>
+    13:                 </div>
+    14:               </div>
+    15:             </div>
+  app/views/articles/index.html.erb:12:in `block in _app_views_articles_index_html_erb___1075351315_41536140'
+  app/views/articles/index.html.erb:6:in `_app_views_articles_index_html_erb___1075351315_41536140'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (392.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:03:56 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (53.0ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (undefined method `edit_articles_path' for #<#<Class:0x000000042dde68>:0x00000003f0f138>):
+     9:                 <h4 class = 'card-title'> <%=article.title%> </h4>
+    10:                 <p class = 'card-text'> <%=article.body%> </p>
+    11:                 <div class = 'card-text'>
+    12:                   <%= link_to 'Edit', edit_articles_path(article), class: 'btn' %>
+    13:                 </div>
+    14:               </div>
+    15:             </div>
+  app/views/articles/index.html.erb:12:in `block in _app_views_articles_index_html_erb___1075351315_33044760'
+  app/views/articles/index.html.erb:6:in `_app_views_articles_index_html_erb___1075351315_33044760'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (394.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:04:27 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (69.0ms)
+Completed 500 Internal Server Error in 111ms
+
+ActionView::Template::Error (undefined method `edit_articles_path' for #<#<Class:0x000000042dde68>:0x000000053cbce8>):
+     9:                 <h4 class = 'card-title'> <%=article.title%> </h4>
+    10:                 <p class = 'card-text'> <%=article.body%> </p>
+    11:                 <div class = 'card-footer'>
+    12:                   <%= link_to 'Edit', edit_articles_path(article), class: 'btn' %>
+    13:                 </div>
+    14:               </div>
+    15:             </div>
+  app/views/articles/index.html.erb:12:in `block in _app_views_articles_index_html_erb___1075351315_43927440'
+  app/views/articles/index.html.erb:6:in `_app_views_articles_index_html_erb___1075351315_43927440'
+
+
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (375.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:04:47 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 174ms (Views: 173.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 21:04:47 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 21:04:48 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 67ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 21:05:18 +0700
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2016-09-30 21:14:53 +0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (299.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered articles/_form.html.erb (60.0ms)
+  Rendered articles/edit.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 638ms (Views: 162.2ms | ActiveRecord: 299.0ms)
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered articles/_form.html.erb (41.0ms)
+  Rendered articles/edit.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 141ms (Views: 139.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 21:28:58 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:29:00 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (138.0ms)
+Completed 200 OK in 195ms (Views: 193.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:29:01 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:01 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 21:29:02 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-09-30 21:59:07 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (185.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (30.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (113.0ms)
+Completed 200 OK in 559ms (Views: 395.5ms | ActiveRecord: 64.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-09-30 21:59:21 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-09-30 21:59:22 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-01 10:20:56 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (156.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 415ms (Views: 239.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-01 10:21:08 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-10-01 10:22:34 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (84.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (119.0ms)
+Completed 200 OK in 1758ms (Views: 1645.0ms | ActiveRecord: 110.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:36 +0700
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2016-10-01 10:22:39 +0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (21.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered articles/_form.html.erb (134.0ms)
+  Rendered articles/edit.html.erb within layouts/application (175.0ms)
+Completed 200 OK in 256ms (Views: 232.8ms | ActiveRecord: 22.0ms)
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2016-10-01 10:22:42 +0700
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZhHwFBaT5g3NmDzT3HCKojaCC4UTJOY+Mb6mvO2ntAM=", "article"=>{"title"=>"asd", "body"=>"asdasdadssss"}, "commit"=>"Update Article", "id"=>"2"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (151.0ms)[0m  [1mUPDATE "articles" SET "body" = $1, "updated_at" = $2 WHERE "articles"."id" = 2[0m  [["body", "asdasdadssss"], ["updated_at", Sat, 01 Oct 2016 03:22:42 UTC +00:00]]
+  [1m[35m (41.0ms)[0m  COMMIT
+Redirected to http://127.0.0.1:3000/articles/2
+Completed 302 Found in 201ms (ActiveRecord: 194.0ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered articles/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:43 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-10-01 10:22:45 +0700
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/3/edit" for 127.0.0.1 at 2016-10-01 10:22:49 +0700
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/edit.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/articles/3" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZhHwFBaT5g3NmDzT3HCKojaCC4UTJOY+Mb6mvO2ntAM=", "article"=>{"title"=>"sad", "body"=>"asdasdasdadad"}, "commit"=>"Update Article", "id"=>"3"}
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "articles" SET "body" = $1, "updated_at" = $2 WHERE "articles"."id" = 3  [["body", "asdasdasdadad"], ["updated_at", Sat, 01 Oct 2016 03:22:51 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/articles/3
+Completed 302 Found in 5ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "3"]]
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/util.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-10-01 10:22:51 +0700
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-10-01 10:22:53 +0700
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 1.0ms)
