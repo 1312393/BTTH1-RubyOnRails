@@ -39,9 +39,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'bootstrap', '~> 4.0.0.alpha4'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
-
+gem 'sprockets', '2.11.0'
 # Use unicorn as the app server
 # gem 'unicorn'
 
